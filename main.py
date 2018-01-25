@@ -23,7 +23,9 @@ model_columns_file_name = '%s/model_columns.pkl' % model_directory
 model_columns = None
 clf = None
 
-
+@app.route('/', methods=['GET'])
+def HelloWorld():
+    return "welcome to sklearn flask app"
 @app.route('/predict', methods=['POST'])
 def predict():
     if clf:
