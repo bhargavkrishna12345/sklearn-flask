@@ -120,4 +120,4 @@ if __name__ == '__main__':
         print str(e)
         clf = None
 
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run()
