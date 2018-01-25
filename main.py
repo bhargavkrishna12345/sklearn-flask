@@ -103,10 +103,6 @@ def wipe():
 
 
 if __name__ == '__main__':
-    try:
-        port = int(sys.argv[1])
-    except Exception, e:
-        port = 80
 
     try:
         clf = joblib.load(model_file_name)
