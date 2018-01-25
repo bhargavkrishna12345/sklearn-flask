@@ -26,6 +26,7 @@ clf = None
 @app.route('/', methods=['GET'])
 def HelloWorld():
     return "welcome to sklearn flask app"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     if clf:
